@@ -113,8 +113,9 @@ $(function() {
             loadFeed(0);
             Array.from(feed.children).forEach(function(child) {
                 feedArray.push(child.innerText);
+                loadFeed(1);
             });
-            loadFeed(1, done);
+            done();
         });
 
         it("new feed", function() {
