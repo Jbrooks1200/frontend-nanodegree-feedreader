@@ -100,7 +100,7 @@ $(function() {
         });
         
         it("loadFeed", function() {
-            let feed = document.querySelector(".feed");
+            let feed = document.querySelector(".feed .entry");
             expect(feed.children.length > 0).toBe(true);
         });
     });
