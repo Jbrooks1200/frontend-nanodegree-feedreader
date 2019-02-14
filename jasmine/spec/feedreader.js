@@ -44,9 +44,9 @@ $(function() {
          * and that the name is not empty.
          */
         it("name defined", function() {
-            for(let name of allFeeds) {
-                expect(name.url).toBeDefined();
-                expect(name.url.length).not.toBe(0);
+            for(let feed of allFeeds) {
+                expect(feed.url).toBeDefined();
+                expect(feed.url.length).not.toBe(0);
             }
         });
     });
