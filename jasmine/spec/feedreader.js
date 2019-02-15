@@ -110,10 +110,10 @@ $(function() {
         let feedArray = [];
         beforeEach(function(done) {
             let feed = document.querySelector(".feed");
-            loadFeed(0, function() {);
+            loadFeed(0, function() {
             Array.from(feed.children).forEach(function(child) {
                 feedArray.push(child.innerText);
-                )};
+                });
                 loadFeed(1, done);
             });
         });
