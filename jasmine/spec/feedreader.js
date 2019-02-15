@@ -100,8 +100,8 @@ $(function() {
         });
         
         it("loadFeed", function() {
-            let feed = document.querySelector(".feed .entry");
-            expect(feed.children.length > 0).toBe(true);
+            let feed = document.querySelectorAll(".feed .entry");
+            expect(document.querySelectorAll(".feed .entry").length).toBeGreaterThan(0);
         });
     });
        
